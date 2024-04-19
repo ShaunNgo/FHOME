@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mint"
+    tools:context=".UI.RegisterActivity">
+    <TextView
+        android:id="@+id/register_tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="fhome"
+        android:textSize="50dp"
+        android:textColor="@color/text"
+        android:shadowColor="@color/text"
+        android:shadowDx="4.0"
+        android:shadowDy="5.0"
+        android:shadowRadius="15.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/login_tv_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/text"
+        android:text="Đăng ký tài khoản cho gia đình mới!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_tv_1" />
+
+    <EditText
+        android:id="@+id/register_userName"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:inputType="textPersonName"
+        android:hint="Tài khoản"
+        android:textColor="@color/text"
+        android:textSize="14dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/login_account"
+        android:drawablePadding="20dp"
+        android:background="@drawable/border_box_10sp"
+        android:backgroundTint="@color/backgr"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingLeft="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/login_tv_2" />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:inputType="textPersonName"
+        android:hint="Nhập mật khẩu"
+        android:textColor="@color/text"
+        android:textSize="14dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/login_password"
+        android:drawablePadding="20dp"
+        android:background="@drawable/border_box_10sp"
+        android:backgroundTint="@color/backgr"
+        android:paddingLeft="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_userName" />
+
+    <EditText
+        android:id="@+id/register_rePassword"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:inputType="textPersonName"
+        android:hint="Nhập lại mật khẩu"
+        android:textColor="@color/text"
+        android:textSize="14dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/login_password"
+        android:drawablePadding="20dp"
+        android:background="@drawable/border_box_10sp"
+        android:backgroundTint="@color/backgr"
+        android:paddingLeft="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_password" />
+
+
+    <Button
+        android:id="@+id/register_register"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="@color/text"
+        android:onClick="register_btnRegister_onClick"
+        android:text="Đăng ký"
+        android:textAllCaps="false"
+        android:textColor="@color/green4"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_rePassword" />
+
+    <Button
+        android:id="@+id/register_signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/text"
+        android:onClick="register_btnSignIn_onClick"
+        android:text="Đã có tài khoản? \nĐăng nhập ngay"
+        android:textAllCaps="false"
+        android:textColor="@color/green4"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_register" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
